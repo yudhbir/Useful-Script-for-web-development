@@ -1,0 +1,18 @@
+Magento add new module:
+
+bin/magento module:enable Inchoo_Console
+
+bin/magento setup:upgrade
+
+
+Reindexing:
+php bin/magento indexer:reindex
+
+
+Cache Flush:
+php bin/magento cache:flush
+
+
+######Error:__construct() must be an instance of Magento\Framework\View\Result\PageFactory, none given ########
+
+try to delete your module from the var/generation/vendor-name/your-module and try to refresh the page and check if it's working.

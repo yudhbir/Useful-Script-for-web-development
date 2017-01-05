@@ -1,0 +1,20 @@
+$array = array(array(141,151,161), 2, 3, array(101, 202, 303));
+Which of the following will display all values in the array?
+
+Answers:
+
+function DisplayArray($array)
+{
+	foreach ($array as $value)
+	{
+		if (array_valid($value))
+		{
+			DisplayArray($value);
+		} 
+		else
+		{
+			echo $value. “ ”;
+		}
+	}
+}
+DisplayArray($array);

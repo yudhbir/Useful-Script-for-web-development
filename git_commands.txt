@@ -1,0 +1,17 @@
+Git commands:
+
+//creating a branch in repository in local 
+//below command create a virtual directory in local
+
+git checkout -b <branch_name>
+e.g
+git checkout -b geolocation_update
+
+git push <remove directory name in which you want to create branch> geolocation_update
+e.g.
+git push <https://github.com/xyz/xyz.git> geolocation_update
+
+//Delete a branch from github
+git push origin --delete <branch_name>
+e.g
+git push origin --delete geolocation_update
